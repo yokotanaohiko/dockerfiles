@@ -10,3 +10,8 @@ python: ubuntu
 opencv3: python
 	cd opencv3; \
 	docker build -t opencv .
+
+nodejs: ubuntu
+	cd nodejs; \
+	docker build -t nodejs .
+
