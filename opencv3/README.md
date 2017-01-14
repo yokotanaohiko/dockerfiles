@@ -29,6 +29,8 @@
   make opencv3
   ```
 
+  + docker imageの名前は、`opencv`となる
+
 ## 使い方
 
 ```
@@ -36,7 +38,6 @@ docker run --user pythonbase -it opencv /bin/bash --login
 ```
 
 + pythonbaseというユーザーでログインすると、opencvが使える状態になっている
-+ docker imageの名前は、`opencv`となる
 + ログイン後下記のコマンドでOpenCVが使えることを確認できる
 
   ```
