@@ -27,18 +27,16 @@ readme_string = '''
 # dockerfiles
 DockerFileをまとめたもの
 
-### 使い方
+### 前提条件
 
-+ Ubuntu環境を作る
-
-  ```
-  make ubuntu
-  ```
-
-+ Python環境を作る
++ dockerがインストールされている
+  + [この辺り](https://docs.docker.com/engine/installation/linux/ubuntulinux/#/install-the-latest-version)を参考にインストールする
 
   ```
-  make python
+  sudo apt-get update
+  sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+  sudo apt-get install docker-engine
+  sudo service docker start
   ```
 
 ### 作れるもの
