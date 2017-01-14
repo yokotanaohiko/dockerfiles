@@ -3,10 +3,10 @@ ubuntu:
 	cd ubuntu; \
 	docker build -t ubuntubase .
 
-python:
+python: ubuntu
 	cd miniconda3; \
 	docker build -t pythonbase .
 
-opencv:
+opencv3: python
 	cd opencv3; \
 	docker build -t opencv .
